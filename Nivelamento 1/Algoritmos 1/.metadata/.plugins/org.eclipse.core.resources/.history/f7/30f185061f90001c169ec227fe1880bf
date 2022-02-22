@@ -1,0 +1,32 @@
+package br.com.alura.algoritmos;
+
+public class Salarios {
+
+	 private String nome;
+	 private double salario;
+
+	public Salarios(String nome, double salario ) {
+	        this.nome = nome;
+	        this.salario = salario;
+
+	    }
+
+	    public double getSalario() {
+	        return salario;
+	    }
+
+	    public String getNome() {
+	        return nome;
+	    }
+	    
+	    private static int buscaMaior(Salarios[] salario) {
+		       int maiorSalario = 0;
+		       for(int atual = 0; atual <= 4; atual++) {
+		           if(salario[atual].getSalario() > salario[maiorSalario].getSalario()) {
+		               maiorSalario = atual;
+		           }
+		        }
+		       return maiorSalario;
+
+		}
+}

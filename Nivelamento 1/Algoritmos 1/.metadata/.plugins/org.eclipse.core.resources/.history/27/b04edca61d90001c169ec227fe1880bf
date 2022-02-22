@@ -1,0 +1,21 @@
+package br.com.alura.algoritmos;
+
+public class Salarios {
+
+	 private String nome;
+	 private String salario;
+
+	public Salarios(String nome, double salario ) {
+	        this.nome = nome;
+	        this.salario = salario;
+
+	    }
+
+	    public double getSalario() {
+	        return salario;
+	    }
+
+	    public String getSalario() {
+	        return nome;
+	    }
+}

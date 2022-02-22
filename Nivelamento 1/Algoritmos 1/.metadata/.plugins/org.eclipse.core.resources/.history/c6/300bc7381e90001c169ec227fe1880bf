@@ -1,0 +1,33 @@
+package br.com.alura.algoritmos;
+
+public class TestaSalarios {
+
+	public static void main(String[] args) {
+		
+		Salarios salario[] = { 
+                new Salarios ("Fernando", 3200),
+                new Salarios("Alfredo", 6000),
+                new Salarios("Flávio", 5000),
+                new Salarios("Marcela", 2200),
+        };
+
+        int menorSalario = buscaMenor(salario);
+        System.out.println(menorSalario);
+        System.out.println("O carro " + salario[menorSalario].getNome()
+                                      + " é o mais barato, e custa "
+                                      + salario[menorSalario].getSalario());
+
+    }
+
+	  private static int buscaMenor(Salarios[] salario) {
+	       int maisBarato = 0;
+	       for(int atual = 0; atual <= 4; atual++) {
+	           if(salario[atual].getSalario() < salario[maisBarato].getSalario()) {
+	               maisBarato = atual;
+	           }
+	        }
+	       return maisBarato;
+
+	}
+
+}

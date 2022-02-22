@@ -1,0 +1,11 @@
+package br.com.alura.algoritmos;
+
+public class Produto {
+
+	 public Produto(String string, int i) {
+		// TODO Auto-generated constructor stub
+	}
+	private String nome;
+	 private double preco;
+	 
+	}
